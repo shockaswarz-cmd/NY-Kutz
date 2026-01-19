@@ -233,7 +233,7 @@
             <!-- Using perspective-container to enable 3D depth -->
             <div id="hero-title-container" class="perspective-container cursor-default">
                 <h1 id="hero-title"
-                    class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-thin leading-[1.1] md:leading-[1.0] mb-8 hover-trigger select-none text-ny-cream relative z-20 py-2">
+                    class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-thin leading-[1.1] md:leading-[1.0] mb-8 hover-trigger select-none text-ny-cream relative z-20 py-2">
                     <!-- Text injected via JS for splitting -->
                 </h1>
             </div>
@@ -1018,24 +1018,45 @@
 
         function splitText(text, isItalic = false) {
             const lineContainer = document.createElement('div');
-            // Changed: Removed 'overflow-hidden' from the line container to allow 3D overflow
+            // Allow wrapping essentially, but we control it via words
             lineContainer.className = `block ${isItalic ? 'italic font-normal' : ''} pb-1`;
 
-            const chars = text.split('');
-            chars.forEach(char => {
-                const wrapper = document.createElement('span');
-                wrapper.className = 'char-wrapper';
-                if (char === ' ') {
-                    wrapper.style.width = '0.3em';
-                    wrapper.innerHTML = '&nbsp;';
-                } else {
+            // Split by spaces to get words
+            const words = text.split(' ');
+
+            words.forEach((word, index) => {
+                // Create a wrapper for the word that prevents breaking *inside* the word
+                const wordWrapper = document.createElement('span');
+                wordWrapper.style.display = 'inline-block';
+                wordWrapper.style.whiteSpace = 'nowrap';
+
+                // Split word into characters
+                const chars = word.split('');
+                chars.forEach(char => {
+                    const charWrapper = document.createElement('span');
+                    charWrapper.className = 'char-wrapper';
+
                     const inner = document.createElement('span');
                     inner.className = 'char-inner';
                     inner.textContent = char;
-                    wrapper.appendChild(inner);
+
+                    charWrapper.appendChild(inner);
+                    wordWrapper.appendChild(charWrapper);
+                });
+
+                lineContainer.appendChild(wordWrapper);
+
+                // Add a space after the word if it's not the last one
+                // The space should be outside the word wrapper to allow line breaking at the space
+                if (index < words.length - 1) {
+                    const space = document.createElement('span');
+                    space.innerHTML = '&nbsp;';
+                    // Allow the space to be a breakpoint
+                    space.style.display = 'inline-block';
+                    lineContainer.appendChild(space);
                 }
-                lineContainer.appendChild(wrapper);
             });
+
             return lineContainer;
         }
 
