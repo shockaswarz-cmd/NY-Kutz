@@ -73,6 +73,45 @@
         .policy-section {
             scroll-margin-top: 100px;
         }
+
+        /* ==================== */
+        /* MOBILE OPTIMIZATIONS */
+        /* ==================== */
+
+        /* Safe area support for notched devices */
+        @supports (padding: env(safe-area-inset-bottom)) {
+            body {
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            nav {
+                padding-top: max(1.5rem, env(safe-area-inset-top));
+            }
+        }
+
+        /* Footer: improve tap targets on mobile */
+        @media (max-width: 767px) {
+            footer .flex.gap-8 {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            footer .flex.gap-8 a {
+                padding: 12px 16px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Footer container stacking */
+            footer .flex.flex-col.md\:flex-row {
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 
