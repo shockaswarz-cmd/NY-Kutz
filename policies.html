@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies | NY KUTZ London</title>
+    <meta name="description"
+        content="NY KUTZ studio policies, terms and conditions, cancellation policy, and health & safety guidelines.">
+
+    <!-- Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ny-black': '#0a0a0a',
+                        'ny-espresso': '#1a1614',
+                        'ny-mahogany': '#3e2723',
+                        'ny-brass': '#c5a065',
+                        'ny-cream': '#e8e6e1',
+                        'ny-charcoal': '#1c1c1c'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 400 400%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e8e6e1;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c5a065;
+        }
+
+        .policy-section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body class="relative antialiased selection:bg-ny-brass selection:text-ny-black">
+
+    <!-- Global Grain Overlay -->
+    <div class="fixed inset-0 pointer-events-none z-50 mix-blend-overlay opacity-30 bg-grain"></div>
+
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 left-0 w-full z-40 px-6 py-6 flex justify-between items-center bg-ny-black/80 backdrop-blur-md border-b border-ny-white/5">
+        <a href="index.html"
+            class="text-xl font-display tracking-widest text-ny-cream hover:text-ny-brass transition-colors">NY
+            KUTZ</a>
+        <a href="index.html#booking"
+            class="text-xs font-sans tracking-widest text-ny-brass border border-ny-brass/30 px-6 py-2 rounded-full hover:bg-ny-brass hover:text-ny-black transition-all duration-300">BOOK
+            APPOINTMENT</a>
+    </nav>
+
+    <!-- Hero Header -->
+    <section class="pt-32 pb-16 px-6 bg-ny-black border-b border-ny-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-ny-brass text-xs tracking-[0.3em] uppercase mb-4 flex items-center justify-center gap-4">
+                <span class="w-8 h-[1px] bg-ny-brass"></span> Studio Guidelines <span
+                    class="w-8 h-[1px] bg-ny-brass"></span>
+            </h3>
+            <h1 class="text-4xl md:text-6xl font-display text-ny-cream mb-6">Policies & Terms</h1>
+            <p class="text-ny-cream/60 max-w-2xl mx-auto leading-relaxed">
+                Your experience at NY KUTZ is our priority. Please familiarise yourself with our studio policies to
+                ensure a seamless appointment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="py-8 px-6 bg-ny-espresso/50 border-b border-ny-white/5 sticky top-[76px] z-30 backdrop-blur-md">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-3 md:gap-6 text-xs">
+                <a href="#appointments"
+                    class="text-ny-cream/60 hover:text-ny-brass transition-colors uppercase tracking-widest">Appointments</a>
+                <span class="text-ny-white/20">•</span>
+                <a href="#health"
+                    class="text-ny-cream/60 hover:text-ny-brass transition-colors uppercase tracking-widest">Health &
+                    Safety</a>
+                <span class="text-ny-white/20">•</span>
+                <a href="#payment"
+                    class="text-ny-cream/60 hover:text-ny-brass transition-colors uppercase tracking-widest">Payment</a>
+                <span class="text-ny-white/20">•</span>
+                <a href="#conduct"
+                    class="text-ny-cream/60 hover:text-ny-brass transition-colors uppercase tracking-widest">Conduct</a>
+                <span class="text-ny-white/20">•</span>
+                <a href="#minors"
+                    class="text-ny-cream/60 hover:text-ny-brass transition-colors uppercase tracking-widest">Minors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16 px-6 bg-ny-black">
+        <div class="max-w-4xl mx-auto space-y-20">
+
+            <!-- Appointments & Cancellations -->
+            <section id="appointments" class="policy-section">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-ny-brass/10 border border-ny-brass/30 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-ny-brass">
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <rect width="18" height="18" x="3" y="4" rx="2" />
+                            <path d="M3 10h18" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-display text-ny-cream">Appointments & Cancellations</h2>
+                </div>
+
+                <div class="space-y-6 text-ny-cream/70 leading-relaxed">
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Booking Policy</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>NY KUTZ operates <strong class="text-ny-cream">strictly by appointment
+                                        only</strong>. Walk-ins are not accepted.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Appointments can be booked through our online booking system.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Please arrive <strong class="text-ny-cream">on time</strong>. If you anticipate
+                                    being late, contact us immediately.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Cancellation Policy
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>A minimum of <strong class="text-ny-cream">24 hours notice</strong> is required
+                                    for cancellations or rescheduling.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Late cancellations (less than 24 hours) may incur a <strong
+                                        class="text-ny-cream">50% cancellation fee</strong>.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span><strong class="text-ny-cream">No-shows</strong> will be charged the full service
+                                    amount and may affect future booking privileges.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Late Arrivals</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Arrivals more than <strong class="text-ny-cream">15 minutes late</strong> may
+                                    result in a shortened service or rescheduling.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>We cannot guarantee full service delivery if you arrive late, as this impacts
+                                    subsequent clients.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health & Safety -->
+            <section id="health" class="policy-section">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-ny-brass/10 border border-ny-brass/30 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-ny-brass">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-display text-ny-cream">Health & Safety</h2>
+                </div>
+
+                <div class="space-y-6 text-ny-cream/70 leading-relaxed">
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Hygiene Standards
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>All tools and equipment are <strong class="text-ny-cream">sterilised between each
+                                        client</strong> using hospital-grade disinfectants.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Fresh capes and towels are provided for every appointment.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>The studio is cleaned and sanitised regularly throughout the day.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg border-l-4 border-l-amber-500/50">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Service Refusal for
+                            Health Conditions</h3>
+                        <p class="mb-4">To protect the health of our clients and staff, we reserve the right to refuse
+                            service if you present with:</p>
+                        <ul class="space-y-2">
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1">⚠</span>
+                                <span>Head lice, nits, or ringworm</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1">⚠</span>
+                                <span>Conjunctivitis (pink eye) or other contagious eye conditions</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1">⚠</span>
+                                <span>Inflamed, swollen, or infected skin in the service area</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1">⚠</span>
+                                <span>Open wounds, cuts, or sores on the scalp or face</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Allergy & Patch
+                            Testing</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>For chemical services (dye, enhancement), a <strong class="text-ny-cream">patch
+                                        test 48 hours prior</strong> may be required for new clients.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Please disclose any <strong class="text-ny-cream">allergies, medical conditions,
+                                        or medications</strong> during your consultation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Payment & Pricing -->
+            <section id="payment" class="policy-section">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-ny-brass/10 border border-ny-brass/30 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-ny-brass">
+                            <rect width="20" height="14" x="2" y="5" rx="2" />
+                            <line x1="2" x2="22" y1="10" y2="10" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-display text-ny-cream">Payment & Pricing</h2>
+                </div>
+
+                <div class="space-y-6 text-ny-cream/70 leading-relaxed">
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Payment Methods
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>We accept <strong class="text-ny-cream">cash and card payments</strong>
+                                    (contactless, Apple Pay, Google Pay).</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Full payment is due at the end of each appointment.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Pricing
+                            Transparency</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>All prices are clearly listed on our <a href="index.html#services"
+                                        class="text-ny-brass hover:underline">services page</a>.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Additional charges may apply for <strong class="text-ny-cream">extra-long or thick
+                                        hair</strong> requiring extended service time.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>You will be informed of the total cost before any service begins.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Complaints &
+                            Refunds</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Please raise any concerns <strong class="text-ny-cream">before leaving the
+                                        studio</strong> so we can address them immediately.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>We offer <strong class="text-ny-cream">complimentary adjustments</strong> for
+                                    reasonable complaints within 7 days.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Refunds are at the discretion of NY KUTZ and assessed on a case-by-case
+                                    basis.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Code of Conduct -->
+            <section id="conduct" class="policy-section">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-ny-brass/10 border border-ny-brass/30 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-ny-brass">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-display text-ny-cream">Code of Conduct</h2>
+                </div>
+
+                <div class="space-y-6 text-ny-cream/70 leading-relaxed">
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Respectful
+                            Environment</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>NY KUTZ is a professional studio. We maintain a <strong
+                                        class="text-ny-cream">respectful, calm environment</strong>.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span><strong class="text-ny-cream">Zero tolerance</strong> for abusive, aggressive, or
+                                    discriminatory behaviour.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Anyone displaying inappropriate behaviour will be asked to leave.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Personal Belongings
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Secure storage is available for personal items during your appointment.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>NY KUTZ is <strong class="text-ny-cream">not liable for lost or stolen
+                                        belongings</strong>.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Photography &
+                            Privacy</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Photography or filming within the studio requires <strong
+                                        class="text-ny-cream">explicit consent</strong>.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>We may photograph our work for portfolio purposes—your consent will always be
+                                    requested.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Minors & Age Restrictions -->
+            <section id="minors" class="policy-section">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-ny-brass/10 border border-ny-brass/30 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-ny-brass">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-display text-ny-cream">Minors & Age Restrictions</h2>
+                </div>
+
+                <div class="space-y-6 text-ny-cream/70 leading-relaxed">
+                    <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Services for Under
+                            16s</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Clients under 16 must be accompanied by a <strong class="text-ny-cream">parent or
+                                        guardian</strong>.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Written parental consent may be required for certain services.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-ny-brass mt-1">•</span>
+                                <span>Kids' haircuts are available for children <strong class="text-ny-cream">aged 7 and
+                                        above</strong>.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg border-l-4 border-l-amber-500/50">
+                        <h3 class="text-ny-brass text-sm uppercase tracking-widest mb-4 font-medium">Chemical Service
+                            Restrictions</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1">⚠</span>
+                                <span><strong class="text-ny-cream">Permanent hair colour and dye services</strong> are
+                                    not available to clients under 16.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-amber-500 mt-1">⚠</span>
+                                <span>This is for safety reasons in accordance with industry guidelines.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right to Refuse -->
+            <section class="policy-section">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-ny-brass/10 border border-ny-brass/30 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-ny-brass">
+                            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                            <path d="M12 9v4" />
+                            <path d="M12 17h.01" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-display text-ny-cream">Right to Refuse Service</h2>
+                </div>
+
+                <div class="bg-ny-espresso/30 border border-ny-white/5 p-6 rounded-lg text-ny-cream/70">
+                    <p class="mb-4">NY KUTZ reserves the right to refuse or discontinue service at any time if:</p>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-ny-brass mt-1">•</span>
+                            <span>The requested service is deemed <strong class="text-ny-cream">unsafe, unethical, or
+                                    inappropriate</strong> for the client.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-ny-brass mt-1">•</span>
+                            <span>Hair or scalp condition makes the service inadvisable.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-ny-brass mt-1">•</span>
+                            <span>Client behaviour poses a risk to themselves, staff, or other clients.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-ny-brass mt-1">•</span>
+                            <span>Medical contraindications are present that preclude safe service delivery.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-ny-cream/50 text-sm">
+                        The final decision on service suitability rests with the barber. This is always done with your
+                        safety and wellbeing in mind.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Back to Home CTA -->
+    <section class="py-16 px-6 bg-ny-espresso border-t border-ny-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-display text-ny-cream mb-4">Questions?</h2>
+            <p class="text-ny-cream/60 mb-8">Get in touch via Instagram or book your appointment online.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#booking"
+                    class="px-8 py-4 bg-ny-brass text-ny-black font-sans text-xs font-bold tracking-widest uppercase hover:bg-white transition-colors">
+                    Book Appointment
+                </a>
+                <a href="index.html"
+                    class="px-8 py-4 border border-ny-brass/30 text-ny-brass font-sans text-xs font-bold tracking-widest uppercase hover:bg-ny-brass/10 transition-colors">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ny-black py-12 px-6 border-t border-ny-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-[10px] text-ny-cream/30 uppercase tracking-widest">© 2026 NY KUTZ London. All Rights
+                Reserved.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <a href="index.html"
+                    class="text-[10px] text-ny-cream/30 uppercase tracking-widest hover:text-ny-brass transition-colors">Home</a>
+                <a href="policies.html" class="text-[10px] text-ny-brass uppercase tracking-widest">Policies</a>
+                <a href="privacy.html"
+                    class="text-[10px] text-ny-cream/30 uppercase tracking-widest hover:text-ny-brass transition-colors">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Init -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
